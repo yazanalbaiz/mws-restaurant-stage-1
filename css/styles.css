@@ -51,7 +51,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 47.2%;
 }
 /* ====================== Navigation ====================== */
 nav {
