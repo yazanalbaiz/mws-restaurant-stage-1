@@ -149,13 +149,18 @@ createRestaurantHTML = (restaurant) => {
   name.innerHTML = restaurant.name;
   li.append(name);
 
+  //Use of an address tag for a11y semantics
+  const addressContainer = document.createElement('address');
+
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
-  li.append(neighborhood);
+  addressContainer.append(neighborhood);
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
-  li.append(address);
+  addressContainer.append(address);
+
+  li.append(addressContainer);
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
