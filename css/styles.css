@@ -299,10 +299,7 @@ nav h1 a {
 
 @media screen and (min-width: 567px) and (max-width: 591px){
   #filter-label-neig, #filter-label-cui {
-    /**
-    * TO-DO:
-    * - Make the lables fit
-    */
+    margin: 5%;
   }
 }
 
