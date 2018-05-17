@@ -303,6 +303,16 @@ nav h1 a {
   }
 }
 
+@media screen and (min-width: 379px) and (max-width: 425px){
+  .filter-options {
+    padding-top: 2%;
+  }
+  #filter-label-cui {
+    margin-left: 16%;
+  }
+}
+
+
 /* ########################## focus ########################## */
 /* Better focus highlighting for the visually impaired */
 select:focus {
