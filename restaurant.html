@@ -11,7 +11,7 @@
   <title>Restaurant Info</title>
 </head>
 
-<body class="inside">
+<body>
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
@@ -30,25 +30,27 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
+    <!-- I was going to mess with the tabindex here but I thought even those in need could use the map fine -->
     <!-- aside semantic tag for a11y -->
-    <aside id="map-container">
+    <section id="map-container">
       <div id="map"></div>
-    </aside>
+    </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <!-- aside semantic tag for a11y -->
-    <aside id="restaurant-container">
+    <section id="restaurant-container">
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
       <table id="restaurant-hours"></table>
-      <!-- Beginning reviews -->
-      <section id="reviews-container">
-        <ul id="reviews-list"></ul>
-      </section>
-      <!-- End reviews -->
-    </aside>
+    </section>
+
+    <!-- Beginning reviews -->
+    <section id="reviews-container">
+      <ul id="reviews-list"></ul>
+    </section>
+    <!-- End reviews -->
     <!-- end restaurant -->
     
   </main>
