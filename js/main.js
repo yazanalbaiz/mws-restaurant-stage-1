@@ -160,6 +160,8 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  //Add a class for focus for a11y
+  more.classList.add('details-button');
   li.append(more)
 
   return li
