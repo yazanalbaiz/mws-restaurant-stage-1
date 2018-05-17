@@ -134,6 +134,7 @@ nav h1 a {
   width: 200px;
 }
 
+
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
@@ -295,3 +296,23 @@ nav h1 a {
   }
 }
 
+
+@media screen and (min-width: 567px) and (max-width: 591px){
+  #filter-label-neig, #filter-label-cui {
+    /**
+    * TO-DO:
+    * - Make the lables fit
+    */
+  }
+}
+
+/* ########################## focus ########################## */
+/* Better focus highlighting for the visually impaired */
+select:focus {
+  border: 5px solid orange;
+}
+
+.details-button:focus {
+  border: 5px solid #3397DB;
+  border-bottom: none;
+}
