@@ -1,6 +1,11 @@
 let restaurant;
 var map;
 
+document.addEventListener('resize', () => {
+  // if(window.innerWidth === 1900)
+    console.log(111);
+})
+
 /**
  * Initialize Google map, called from HTML.
  */
@@ -119,16 +124,23 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
+
+  const div = document.createElement('div');
+  div.classList.add('review-header');
+
   const name = document.createElement('p');
   name.innerHTML = review.name;
-  li.appendChild(name);
+  div.appendChild(name);
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
-  li.appendChild(date);
+  div.appendChild(date);
 
+  li.appendChild(div);
+  
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
+  rating.classList.add('rating');
   li.appendChild(rating);
 
   const comments = document.createElement('p');
