@@ -168,10 +168,7 @@ createRestaurantHTML = (restaurant) => {
   //Add a class for focus for a11y
   more.classList.add('details-button');
   //Add aria-label for Details links on front page
-  const ariaLabel = document.createAttribute('aria-label');
-  ariaLabel.value = `View ${restaurant.name} Details`;
-
-  more.attributes.setNamedItem(ariaLabel);
+  more.setAttribute('aria-label', `View ${restaurant.name} Details`);
 
   li.append(more)
 
