@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header role="banner">
+    <nav role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
+  <main id="maincontent" role="main">
     <!-- I was going to mess with the tabindex here but I thought even those in need could use the map fine -->
     <section id="map-container">
       <div id="map"></div>
@@ -43,7 +43,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR-leF6w3G7cxH_-vatc8iTba9--hPzyc&libraries=places&callback=initMap"></script>
 
 
-  <footer id="footer">
+  <footer id="footer" role="contentinfo">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
