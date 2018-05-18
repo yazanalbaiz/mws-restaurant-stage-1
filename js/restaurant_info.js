@@ -128,7 +128,8 @@ createReviewHTML = (review) => {
   const div = document.createElement('div');
   div.classList.add('review-header');
 
-  const name = document.createElement('p');
+  //Used h3 instead of p to make the name clearer
+  const name = document.createElement('h3');
   name.innerHTML = review.name;
   div.appendChild(name);
 
@@ -137,7 +138,7 @@ createReviewHTML = (review) => {
   div.appendChild(date);
 
   li.appendChild(div);
-  
+
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
   rating.classList.add('rating');
