@@ -4,6 +4,7 @@ let restaurants,
 var map
 var markers = []
 
+/*Steps from https://www.youtube.com/watch?v=BfL3pprhnms */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('./sw.js')
