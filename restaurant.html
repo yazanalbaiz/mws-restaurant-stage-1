@@ -31,18 +31,17 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <!-- I was going to mess with the tabindex here but I thought even those in need could use the map fine -->
-    <!-- aside semantic tag for a11y -->
     <section id="map-container">
       <div id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <!-- aside semantic tag for a11y -->
     <section id="restaurant-container">
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
+      <!-- Used address tag for a11y semantics -->
+      <address id="restaurant-address"></address>
       <table id="restaurant-hours"></table>
     </section>
 
