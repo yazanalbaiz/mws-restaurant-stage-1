@@ -345,7 +345,7 @@ nav h1 a {
 }
 /* To turn the layout of the deatails page on mobile screens */
 @media screen and (max-width: 840px) {
-  /* .inside header {
+  .inside header {
     position: static;
     width: 100%;
   }
@@ -362,7 +362,21 @@ nav h1 a {
   }
   .inside #footer {
     width: 100%;
-  } */
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .inside #breadcrumb {
+    width: 100%;
+  }
+
+  #restaurant-container {
+    padding-top: 1%;
+  }
+
+  #restaurant-container, #reviews-container {
+    width: 100%;
+  }
 }
 
 /* ########################## focus ########################## */
