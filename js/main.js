@@ -167,6 +167,12 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   //Add a class for focus for a11y
   more.classList.add('details-button');
+  //Add aria-label for Details links on front page
+  const ariaLabel = document.createAttribute('aria-label');
+  ariaLabel.value = `View ${restaurant.name} Details`;
+
+  more.attributes.setNamedItem(ariaLabel);
+
   li.append(more)
 
   return li
