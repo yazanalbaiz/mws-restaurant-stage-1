@@ -363,6 +363,13 @@ nav h1 a {
     margin-left: 16%;
   }
 }
+
+@media screen and (max-width: 381px) {
+  /* Make it so it won't overflow */
+  #restaurant-container, #reviews-container {
+    padding: 0 0 0 5%;
+  }
+}
 /* To turn the layout of the deatails page on mobile screens */
 @media screen and (max-width: 840px) {
   .inside header {
